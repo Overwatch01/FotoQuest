@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  isChecked = false;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  changedOrderingMethod() {
+    this.isChecked = !(this.isChecked);
+    console.log(this.isChecked);
+  }
 }
