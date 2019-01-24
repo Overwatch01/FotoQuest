@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -13,8 +13,5 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  changedOrderingMethod() {
-    this.isChecked = !(this.isChecked);
-    console.log(this.isChecked);
-  }
+
 }

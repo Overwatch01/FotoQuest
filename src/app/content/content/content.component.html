@@ -1,3 +1,13 @@
+
+New-Old
+  <mat-slide-toggle
+  [(ngModel)]="isChecked"
+  class="example-margin"
+  (change)="changedOrderingMethod()">
+  </mat-slide-toggle>
+Old-New
+
+
 <mat-grid-list cols="2" rowHeight="2:1" *ngIf="groundImage.length > 0">
   <mat-grid-tile *ngFor="let item of groundImage;  index as i" class="img-con">
     <div class="carousel slide" data-ride="carousel">
@@ -7,7 +17,7 @@
         </div>
       </div>
     </div>
-    <mat-grid-tile-footer>{{foto[i].timestamp}} </mat-grid-tile-footer>
+    <mat-grid-tile-footer></mat-grid-tile-footer>
   </mat-grid-tile>
 </mat-grid-list>
 
